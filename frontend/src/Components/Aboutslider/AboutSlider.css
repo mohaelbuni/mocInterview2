@@ -1,0 +1,23 @@
+.first{
+    height: 100%;
+    width: 100%;
+}
+.second{
+    height: 100%;
+    width: 100%;
+}
+.third{
+    height: 100%;
+    width: 100%;
+}
+.headlines{
+    color: #fd9a34;
+    size: 70px;
+    font-weight: bold;
+    
+}
+.paragraph{
+    color: #2A1A5E;
+    size: 70px;
+    font-weight: bold;
+}

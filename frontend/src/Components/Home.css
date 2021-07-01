@@ -1,0 +1,206 @@
+video{
+    object-fit :cover ;
+    width:100%;
+    position:absolute;
+    z-index: -1;
+}
+.section1-container{
+    /*background: Url('..\home-sec1.png') center center/cover no-repeat;*/
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    overflow-x:none;
+    
+}
+.sec1-text{
+  text-decoration: none;
+
+}
+.text-1 {
+    color:  #2A1A5E;
+    font-size: 65px ;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 150px;
+    margin-left: 62px;
+ }
+ .text-11 {
+     color:  #2A1A5E;
+     font-size: 65px ;
+     font-weight: bold;
+     margin-left: 62px;
+     margin-top: -40px;
+  }
+  
+ .text-2{
+     color: #fcdc54;
+     font-size: 80px ;
+     font-weight: bold;
+     margin-left: 9rem;
+     margin-top: -130px;
+     
+ }
+ .text-111 {
+     color:  #2A1A5E;
+     font-size: 65px ;
+     font-weight: bold;
+     margin-left: 29.1rem;
+     margin-top: -121px;
+  }
+  .text-1111 {
+     color:  #2A1A5E;
+     font-size: 65px ;
+     font-weight: bold;
+     margin-left: 62px;
+     margin-top: -33px;
+  }
+  .text-22{
+     color: #fcdc54;
+     font-size: 100px ;
+     font-weight: bold;
+     margin-left: -35rem;
+     margin-top: -128px;
+  }
+  .text-3{
+     color:  #2A1A5E;
+     font-size: 25px ;
+     display: table;
+     font-weight: bold;
+     margin-left: 62px;
+     margin-top: -60px;
+  }
+  .text-33{
+     color:  #2A1A5E;
+     font-size: 25px ;
+     display: table;
+     font-weight: bold;
+     margin-left: 62px;
+     margin-top: -25px;
+  }
+  .text-333{
+     color:  #2A1A5E;
+     font-size: 25px ;
+     display: table;
+     font-weight: bold;
+     margin-left: 62px;
+     margin-top: -25px;
+  }
+ .text-4{
+     color:  #2A1A5E;
+     font-size: 25px ;
+     display: table;
+     font-weight: bold;
+     width:100%;
+     text-align: right;
+     margin-top: -340px;
+     margin-left: -140px;
+     
+ }
+ .text-44{
+     color:  #2A1A5E;
+     font-size: 25px ;
+     display: table;
+     font-weight: bold;
+     text-align: right;
+     width:100%;
+     margin-left: -80px;
+     margin-top: -10px;
+ }
+ .text-444{
+     color:  #2A1A5E;
+     font-size: 25px ;
+     display: table;
+     font-weight: bold;
+     width:100%;
+     text-align: right;
+     margin-left: -74px;
+     margin-top: -10px;
+ }
+ .text-4444{
+     color:  #2A1A5E;
+     font-size: 25px ;
+     display: table;
+     font-weight: bold;
+     width:100%;
+     text-align: right;
+     margin-left: -370px;
+     margin-top: -10px;
+ }
+ 
+ .input-email{
+     display: inline-table;
+     width: auto;
+     width: 300px;
+     height: 40px;
+     border: transparent;
+     border-bottom: 3px solid  #fcdc54 ;
+     margin-left:  57rem;
+ 
+ }
+ /*  margin-left:  57rem;*/
+ .input-email:hover{
+     width: 300px;
+     border: none;
+     border-bottom: 3px solid  #fcdc54 ;
+ }
+ 
+ .subscribe-but{
+     display: inline-table;
+     width: auto;
+     background-color: #fd9a34;
+     border: none;
+     border-radius: 50px!important;
+     color: white;
+     padding: 10px 20px;
+     text-decoration: none;
+     cursor: pointer;
+     margin-top: 3rem;
+     margin-left:  63rem;
+ }
+ .subscribe-but:hover {
+     background-color:#fcdc54  ;
+     border-radius: 50px ;
+ }
+ 
+ .topic{
+     color: #fd9a34;
+    text-align: center;
+    margin-right: 30px;
+    font-weight: bold;
+ }
+ .header{
+     color: #fcdc54;
+     margin-left: 40px;
+     font-weight: bold;
+ }
+ .about-content{
+    color:#2A1A5E;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+ }
+ 
+ 
+ 
+ 
+ 
+
+
+/*    
+ ****** colors ****** 
+ #2A1A5E azr2 
+ #fd9a34 orange 
+ #fcdc54 asfrr 
+
+
+
+******** css sora w bayz f blash ***** 
+.sec1-img{
+    object-fit:fill;
+    display:block;
+    position:absolute;
+    width: fit-content;
+}
+*/
