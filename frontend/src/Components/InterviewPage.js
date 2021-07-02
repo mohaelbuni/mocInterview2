@@ -21,12 +21,13 @@ function InterviewPage() {
   const [allData, setAllData] = useState("")
   const [question, setQuestion] = useState("")
   const [i, setI] = useState(0)
+  const usernameFromStorage = localStorage.getItem('username')
  
 
   useEffect(() => {
     async function fetchData() {
       const { data } = await axios.get("/api/getQuestion")
-      // if(i===1)
+
       setAllData(data)
       setQuestion(data[i])
       
@@ -60,7 +61,7 @@ function InterviewPage() {
         .map((result) => result[0])
         .map((result) => result.transcript)
         .join("")
-      // console.log(transcript)
+
       setNote(transcript)
       mic.onerror = (event) => {
         console.log(event.error)
@@ -77,7 +78,7 @@ function InterviewPage() {
       setQuestion('don')
     }
     setSavedNotes([...savedNotes, note])
-    await axios.post(`/api/saveNotes/${question.id}`,{note})
+    await axios.post(`/api/saveNotes/${question.id}`,{note,username:usernameFromStorage})
     setNote("")
 
     // send savedNotes to backend using axios

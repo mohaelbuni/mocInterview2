@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone as _timezone
 
 
+
 class Interview(models.Model):
     """
     Lma al model yshtaghal m7tageen n3ml foreign key m3 al user
@@ -20,10 +21,11 @@ class Question(models.Model):
     
 class Answer(models.Model):
     answer = models.TextField(max_length=1000, blank=True)
+    user = models.CharField(max_length=200,default='')
     questionId = models.IntegerField()
     
     def __str__(self):
-        return self.question
+        return self.answer
 
 
 class Feedback(models.Model):

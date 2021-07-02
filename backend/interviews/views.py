@@ -1,6 +1,7 @@
 from rest_framework.decorators import api_view
 from twilio.twiml.voice_response import Gather, VoiceResponse
 
+
 # import pandas as pd
 from nltk.tokenize import word_tokenize, sent_tokenize
 import re
@@ -13,7 +14,7 @@ import speech_recognition as sr
 from .models import Question,Answer
 from .serializers import QuestionSerializer
 from rest_framework.response import Response
-
+from django.http import HttpResponse
 
 
 
@@ -35,14 +36,27 @@ def getQuestion(request):
 def saveNotes(request,id):
     if(request.method == 'POST'):
         note = request.data.get('note')
-        Answer(answer=note,questionId=id)
-        Answer.save()
-    return Response()
+        username = request.data.get('username')
+        question = Question.objects.get(pk=id)
+        compareText = question.compare_text
+        answer = Answer(answer=note,user=username,questionId=id)
+        answer.save()
+        return Similarity(request,note,compareText)
+        
+
+# def test(request,note,compareText):
+#     print('my note is : ',note)
+#     print('compare text is : ',compareText)
+#     return HttpResponse('moha')
+    
+
+
+    
 
 
 
 # def Similarity(request, filename, comparefile):
-def Similarity(request,id):
+def Similarity(request,note,compareText):
         
         # compareText = Question.objects.get(pk=id)
         # get comparefile from database
