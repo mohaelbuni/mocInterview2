@@ -7,6 +7,9 @@ import Fade from "react-reveal/Fade"
 /* Pages */
 import AboutSlider from "./Aboutslider/AboutSlider"
 import PressHereButton from "./PressHereButton"
+import Navbar from "./Navbar/Navbar"
+import { SideBarData } from "./SideBarData"
+import FooterContainer from "./Containers/footer"
 
 function Home() {
     const [email,setEmail] = useState('')
@@ -29,8 +32,13 @@ const submitHandler =async (e) =>{
 
   return (
     <>
+      <Navbar screenName={'Log in'} nextNav={'/signupin'} arr={ SideBarData }/>
       <div className='section1-container'>
+
+      <div className='maskk' style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }}>
         <video src='home-sec1-v3.mp4' autoPlay loop muted />
+      
+
         <div className='sec1-text'>
           <p className='text-1'>You can't hire someone</p>
           <p className='text-11'>to</p>
@@ -55,6 +63,7 @@ const submitHandler =async (e) =>{
           <p className='text-444'> your mail and you will be regularly</p>
           <p className='text-4444'>updated!</p>
         </div>
+      
         <form onSubmit={submitHandler}  className='subscribe-mail-form'>
           <input
             className='input-email'
@@ -63,18 +72,19 @@ const submitHandler =async (e) =>{
             aria-required='true'
             aria-invalid='true'
             onChange={(e)=>setEmail(e.target.value)}
-          />
+          /> 
           <button type='submit'  className='subscribe-but' variant='primary'>
             Submit
           </button>
         </form>
+        </div>
       </div>
 
       <div className='section2-howitworks'></div>
       <br />
       <br />
       <br />
-      <div className='section3-aboutus'>
+      <div className='section3-aboutus' >
         <h1 className='topic'>About Us</h1>
         <Fade top>
           <h2 className='header'> Our Mission</h2>
@@ -97,6 +107,9 @@ const submitHandler =async (e) =>{
 
         <AboutSlider />
         <PressHereButton />
+      </div>
+      <div  className='section5-footer' id="footer" >
+      <FooterContainer />
       </div>
     </>
   )

@@ -1,6 +1,10 @@
 import React , { useState } from 'react';
 import './Questions.css';
 import FAQ from "./FAQ";
+import Navbar from './../Components/Navbar/Navbar';
+import { SideBarData } from './../Components/SideBarData';
+import { FooterContainer } from './../Components/Containers/footer';
+
 
 function Questions() {
     const [faqs, setfaqs] = useState ([
@@ -75,6 +79,8 @@ function Questions() {
 
 
     return (
+      <>
+      <Navbar screenName={'Log in'} nextNav={'/signupin'} arr={ SideBarData }/>
       <div className='all'>
         <div className='START-LINE'>
           <h3>Frequently Asked Questions</h3>
@@ -87,6 +93,8 @@ function Questions() {
            ))}
         </div>
       </div>  
+      <FooterContainer />
+    </>
     )
 }
 

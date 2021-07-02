@@ -12,6 +12,7 @@ import {
 } from "./common";
 import { Marginer } from "../marginer";
 import { AccountContext } from "./accountContext";
+import "./style.css"
 
 export function SignupForm() {
   const [firstName,setFirstName] = useState('')
@@ -63,14 +64,14 @@ export function SignupForm() {
         <Input type="email" placeholder="Email" onChange={(e)=>setEmail(e.target.value)} />
         <Input type="password" placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
         <Input type="password" placeholder="Confirm Password" onChange={(e)=>setConfirmPassword(e.target.value)} />
-        <button type="submit">Signup</button>
+        <button className="button-l" type="submit">Signup</button>
       </form>
       <Marginer direction="vertical" margin={10} />
       
       <Marginer direction="vertical" margin="1em" />
-      <MutedLink href="#">
+      <MutedLink href="#" >
         Already have an account?
-        <BoldLink href="#" onClick={switchToSignin}>
+      <BoldLink href="#" onClick={switchToSignin}>
           Login
         </BoldLink>
       </MutedLink>

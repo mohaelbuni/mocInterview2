@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const BoxContainer = styled.div`
   width: 100%;
   display: flex;
@@ -46,6 +47,7 @@ export const MutedLink = styled.a`
   color: rgba(200, 200, 200, 0.8);
   font-weight: 300;
   text-decoration: none;
+  margin-top: -30px;
 `;
 
 export const BoldLink = styled.a`
@@ -58,7 +60,7 @@ export const BoldLink = styled.a`
 `;
 
 
-export const SubmitButton = styled.button`
+export const SubmitButton  = styled.button`
   width: 100%;
   padding: 11px 40%;
   color: #fff;

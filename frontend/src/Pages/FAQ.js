@@ -12,7 +12,6 @@ function FAQ ({faq,index, toggleFAQ}) {
         <div className='faq-answer'>
           {faq.answer}
         </div> 
-      
     </div>
   )
 }

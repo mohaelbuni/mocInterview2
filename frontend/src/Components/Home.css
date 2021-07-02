@@ -67,12 +67,12 @@ video{
      color:  #2A1A5E;
      font-size: 25px ;
      display: table;
-     font-weight: bold;
+     font-weight:bold;
      margin-left: 62px;
      margin-top: -60px;
   }
   .text-33{
-     color:  #2A1A5E;
+     color:#2A1A5E;
      font-size: 25px ;
      display: table;
      font-weight: bold;
@@ -135,15 +135,25 @@ video{
      width: 300px;
      height: 40px;
      border: transparent;
-     border-bottom: 3px solid  #fcdc54 ;
-     margin-left:  57rem;
- 
+     margin-left:  67rem;
+     border-radius: 50px ;
  }
+
+
+ /*.subscribe-mail-form{
+    border-radius: 50px ;
+    width: 900px;
+ } */
+
  /*  margin-left:  57rem;*/
  .input-email:hover{
      width: 300px;
      border: none;
      border-bottom: 3px solid  #fcdc54 ;
+ }
+
+ .maskk{
+     height: 950px; ;
  }
  
  .subscribe-but{
@@ -153,11 +163,11 @@ video{
      border: none;
      border-radius: 50px!important;
      color: white;
-     padding: 10px 20px;
+     padding: 7.5px 15px;
      text-decoration: none;
      cursor: pointer;
-     margin-top: 3rem;
-     margin-left:  63rem;
+     margin-top: 1rem;
+     margin-left:  74rem;
  }
  .subscribe-but:hover {
      background-color:#fcdc54  ;

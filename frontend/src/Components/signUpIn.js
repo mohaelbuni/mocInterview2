@@ -1,7 +1,9 @@
  import React from 'react'
  import { AccountBox } from './accountBox/index';
  import  styled from 'styled-components';
-
+ import Navbar from './Navbar/Navbar';
+ import { SideBarData } from './SideBarData';
+ import { FooterContainer } from './Containers/footer';
 
  const AppContainer = styled.div`
  width: 100%;
@@ -15,7 +17,7 @@
  function signUpIn() {
      return (
         <>    
-          
+           <Navbar screenName={'Log in'} nextNav={'/signupin'} arr={ SideBarData }/>
            <br/>
            <br/>
            <br/>
@@ -23,10 +25,8 @@
                <AccountBox />
             </AppContainer>
            <br/>
-           
-           
-            
-        </>
+                 <FooterContainer />
+          </>
      )
  }
  

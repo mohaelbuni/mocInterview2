@@ -12,6 +12,10 @@ import "./Animation.css"
 import Typewriter from "typewriter-effect"
 import { createMuiTheme } from "@material-ui/core"
 import { ThemeProvider } from "@material-ui/styles"
+import Navbar from './../Navbar/Navbar';
+import { SidebarLogged } from './../SidebarLogged';
+import { FooterContainer } from './../Containers/footer';
+
 
 const materialTheme = createMuiTheme({
   overrides: {
@@ -81,6 +85,8 @@ function BookInterview() {
       }*/
   /*<img src="BookInterview.jpg" alt="BookInterview.jpg"/>*/
   return (
+    <>
+      <Navbar screenName={'Log out'} nextNav={'/'} arr={ SidebarLogged }/>
     <div style={styles.container} className='book-Con'>
       <br></br>
       <br></br>
@@ -140,7 +146,9 @@ function BookInterview() {
         </button>
       </div>
     </div>
-  )
+    <FooterContainer />
+        </>
+  );
 }
 
 const styles = {

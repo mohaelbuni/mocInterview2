@@ -12,21 +12,21 @@ export const SideBarData =[
     },
     {
         title : 'About Us',
-        path : '/about',
+        path : '#aboutUs',
         icon : <i className="fas fa-user-friends"></i>,
         cName : 'nav-text' 
 
     },
     {
         title : 'Contact Us',
-        path : '/contact',
+        path : '#footer',
         icon : <i className="fas fa-address-card"></i>,
         cName : 'nav-text' 
 
     },
     {
         title : 'Subscrube your Mail',
-        path : '/subscribe',
+        path : '#footer',
         icon : <i className="fas fa-envelope-square"></i>,
         cName : 'nav-text' 
     }, 

@@ -11,38 +11,25 @@ import {
 /* PAGES */
 import Profile from "./Pages/Employees/Profile"
 import Home from "./Components/Home"
-// import RateUs from "./Components/RateUs/RateUs"
 import BookInterview from "./Components/BookInterview/BookInterview"
 import HowDoesItWork from "./Pages/Howdoesitworks"
-import AboutUs from "./Pages/Aboutus"
-import ContactUs from "./Pages/Contactus"
-import SubcribeYourMail from "./Pages/Subscribemail"
-
 import Questions from "./Pages/Questions"
 import NotFound from "./Components/NotFound"
 import signUpIn from "./Components/signUpIn"
 import InterviewPage from "./Components/InterviewPage"
-
 import RateRun from "./Components/RateUs2/RateRun"
 import afterLogin from "./Components/afterLoginHome/afterLogin"
 import SearchPage from "./Components/SearchPage/SearchPage"
-import Navbar from "./Components/Navbar/Navbar"
-import FooterContainer from "./Components/Containers/footer"
 
-// import {Signup} from './Components/accountBox/signupForm'
-// import {Signin} from './Components/accountBox/loginForm'
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar />
+       
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/how' component={HowDoesItWork} />
-          <Route path='/about' component={AboutUs} />
-          <Route path='/contact' component={ContactUs} />
-          <Route path='/subscribe' component={SubcribeYourMail} />
           <Route path='/faqs' component={Questions} />
           <Route path='/404' component={NotFound} />
           <Route path='/afterLogin' component={afterLogin} />
@@ -57,7 +44,7 @@ function App() {
           <Route path='/signupin' component={signUpIn} />
           <Redirect to='/404' />
         </Switch>
-        <FooterContainer />
+
       </Router>
     </>
   )
@@ -75,6 +62,7 @@ import Search from './Components/search';
 import Search from './Components/Search';
 import jobSearch from './Components/jobSearch/jobSearch';
 import searchBar from './Components/searchBar';
+import Employees from './Pages/Employees/Employees';
 
           <AppContainer>
              <AccountBox />

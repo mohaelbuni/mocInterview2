@@ -1,7 +1,7 @@
 import  React , {useState } from 'react';
 import './Navbar.css';
 import {Link } from 'react-router-dom';
-import { SideBarData } from './../SideBarData';
+
 
 
 
@@ -23,8 +23,8 @@ import { SideBarData } from './../SideBarData';
                  <img className='navbar-logo' src='../logo.png' alt ='../logo192.png'/>
                  </Link>
                  <button className='navbar-but'>   
-                    <Link to='/signupin' className='nav-links'>
-                        Log In
+                    <Link to={props.nextNav} className='nav-links'>
+                        {props.screenName}
                     </Link>        
                  </button>         
             </div>           
@@ -42,16 +42,17 @@ import { SideBarData } from './../SideBarData';
                             <i className="fas fa-times"></i>
                          </Link>
                     </li>
-                     {SideBarData.map( (item,index) => {
+                     {props.arr.map( (item,index) => {
                          return (
                           <li key={index} className={item.cName}>
-                              <Link to={item.path}>
+                              <a href={item.path}>
                                   {item.icon}
                                   <span>
                                     {item.title}
                                   </span>
-                              </Link>
-                          </li> );
+                              </a>
+                          </li> 
+                          );
                      })}
                 </ul> 
             </nav>

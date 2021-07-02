@@ -67,6 +67,7 @@
     transition: 850ms;
     opacity: 92%;
     border-radius: 20px ;
+    z-index: 9999;
 } 
 .nav-menu.active {
     left: 0;

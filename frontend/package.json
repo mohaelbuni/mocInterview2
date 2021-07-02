@@ -24,7 +24,7 @@
     "framer-motion": "^4.1.17",
     "mdb-react-ui-kit": "^1.0.0-beta5",
     "mdbreact": "^5.0.2",
-    "node-sass": "^6.0.0",
+    "node-sass": "^6.0.1",
     "react": "^17.0.0",
     "react-animate-text": "^0.4.0",
     "react-avatar": "^3.10.0",

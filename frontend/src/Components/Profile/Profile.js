@@ -1,6 +1,10 @@
 import React, { useEffect,useState } from "react"
 import axios from "axios"
 import "./Profile.css"
+import Navbar from './../Navbar/Navbar';
+import { SidebarLogged } from './../SidebarLogged';
+import { FooterContainer } from './../Containers/footer';
+
 
 const Profile = () => {
   const [image, setImage] = useState("")
@@ -36,6 +40,8 @@ const Profile = () => {
   }
 
   return (
+    <>
+     <Navbar screenName={'Log out'} nextNav={'/'} arr={ SidebarLogged }/>
     <div className='container emp-profile'>
       <h1>Upload Image</h1>
       <input
@@ -225,6 +231,8 @@ const Profile = () => {
         </div>
       </form>
     </div>
+      <FooterContainer />
+      </>
   )
 }
 export default Profile

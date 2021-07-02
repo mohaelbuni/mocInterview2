@@ -2,6 +2,9 @@ import axios from "axios"
 import React, { useState, useEffect } from "react"
 import "./InterviewPage.css"
 import Loader from "./Loader/Loader"
+import { FooterContainer } from './Containers/footer';
+import Navbar from './Navbar/Navbar';
+import { SidebarLogged } from './SidebarLogged';
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition
@@ -82,6 +85,7 @@ function InterviewPage() {
 
   return (
     <>
+      <Navbar screenName={'Log out'} nextNav={'/'} arr={ SidebarLogged }/>
       <h1>Intervew Records</h1>
 
       <div className='IV-container'>
@@ -113,6 +117,7 @@ function InterviewPage() {
           <button className='interview-buttons'> Submit Answer </button>
         </div>
       </div>
+      <FooterContainer />
     </>
   )
 }

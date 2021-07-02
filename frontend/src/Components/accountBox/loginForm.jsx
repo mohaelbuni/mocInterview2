@@ -13,6 +13,7 @@ import Message from "../Message/Message"
 // import {Link} from 'react-router-dom'
 import { AccountContext } from "./accountContext"
 import { useHistory } from "react-router"
+import "./style.css"
 
 export function LoginForm() {
   const [username, setusername] = useState("")
@@ -53,10 +54,10 @@ export function LoginForm() {
           placeholder='Password'
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type='submit'>Login</button>
+        <button className="button-l" type='submit'>Login</button>
       </form>
       <Marginer direction='vertical' margin={10} />
-      <MutedLink href='#'>Forget your password?</MutedLink>
+      <MutedLink href='#' className="forget-pass">Forget your password?</MutedLink>
       <Marginer direction='vertical' margin='1.6em' />
 
       <Marginer direction='vertical' margin='1em' />
