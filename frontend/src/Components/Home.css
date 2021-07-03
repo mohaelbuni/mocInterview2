@@ -69,7 +69,7 @@ video{
      display: table;
      font-weight:bold;
      margin-left: 62px;
-     margin-top: -60px;
+     margin-bottom: 28px;
   }
   .text-33{
      color:#2A1A5E;
@@ -78,6 +78,7 @@ video{
      font-weight: bold;
      margin-left: 62px;
      margin-top: -25px;
+     margin-bottom: 28px;
   }
   .text-333{
      color:  #2A1A5E;
@@ -86,6 +87,7 @@ video{
      font-weight: bold;
      margin-left: 62px;
      margin-top: -25px;
+     
   }
  .text-4{
      color:  #2A1A5E;
@@ -94,8 +96,9 @@ video{
      font-weight: bold;
      width:100%;
      text-align: right;
-     margin-top: -340px;
+     margin-top: -345px;
      margin-left: -140px;
+     
      
  }
  .text-44{
@@ -115,7 +118,7 @@ video{
      font-weight: bold;
      width:100%;
      text-align: right;
-     margin-left: -74px;
+     margin-left: -80px;
      margin-top: -10px;
  }
  .text-4444{
@@ -125,7 +128,7 @@ video{
      font-weight: bold;
      width:100%;
      text-align: right;
-     margin-left: -370px;
+     margin-left: -380px;
      margin-top: -10px;
  }
  
@@ -135,28 +138,24 @@ video{
      width: 300px;
      height: 40px;
      border: transparent;
-     margin-left:  67rem;
+     margin-top: 5px;
+     margin-left:  57.6rem;
      border-radius: 50px ;
  }
 
 
- /*.subscribe-mail-form{
-    border-radius: 50px ;
-    width: 900px;
- } */
-
- /*  margin-left:  57rem;*/
+ 
  .input-email:hover{
-     width: 300px;
-     border: none;
-     border-bottom: 3px solid  #fcdc54 ;
+    width: 300px;
+    border: none;
+    border-bottom: 3px solid   #2A1A5E;
  }
 
  .maskk{
      height: 950px; ;
  }
  
- .subscribe-but{
+ .subscribe-but-home{
      display: inline-table;
      width: auto;
      background-color: #fd9a34;
@@ -166,10 +165,10 @@ video{
      padding: 7.5px 15px;
      text-decoration: none;
      cursor: pointer;
-     margin-top: 1rem;
-     margin-left:  74rem;
+     margin-top: 1.7rem;
+     margin-left:  64rem;
  }
- .subscribe-but:hover {
+ .subscribe-but-home:hover {
      background-color:#fcdc54  ;
      border-radius: 50px ;
  }
@@ -177,8 +176,9 @@ video{
  .topic{
      color: #fd9a34;
     text-align: center;
-    margin-right: 30px;
+    margin-right: 22px;
     font-weight: bold;
+    margin-top: 7rem;
  }
  .header{
      color: #fcdc54;

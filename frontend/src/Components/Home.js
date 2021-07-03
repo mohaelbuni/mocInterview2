@@ -47,9 +47,7 @@ const submitHandler =async (e) =>{
           <p className='text-111'>for you,</p>
           <p className='text-1111'>But we do</p>
           <h1 className='text-22'>!</h1>
-          <br />
-          <br />
-          <br />
+          
           <p className='text-3'>
             Interviews are crucial moments in one's career,
           </p>
@@ -73,7 +71,7 @@ const submitHandler =async (e) =>{
             aria-invalid='true'
             onChange={(e)=>setEmail(e.target.value)}
           /> 
-          <button type='submit'  className='subscribe-but' variant='primary'>
+          <button type='submit'  className='subscribe-but-home' variant='primary'>
             Submit
           </button>
         </form>
@@ -81,10 +79,8 @@ const submitHandler =async (e) =>{
       </div>
 
       <div className='section2-howitworks'></div>
-      <br />
-      <br />
-      <br />
-      <div className='section3-aboutus' >
+     
+      <div className='section3-aboutus' id="aboutUs" >
         <h1 className='topic'>About Us</h1>
         <Fade top>
           <h2 className='header'> Our Mission</h2>
@@ -104,12 +100,12 @@ const submitHandler =async (e) =>{
           own dream dream job. Provide our clients the confidence and tips
           needed to break ice of his real life interviews.
         </p>
-
-        <AboutSlider />
         <PressHereButton />
+        <AboutSlider />
+       
       </div>
       <div  className='section5-footer' id="footer" >
-      <FooterContainer />
+      <FooterContainer  />
       </div>
     </>
   )

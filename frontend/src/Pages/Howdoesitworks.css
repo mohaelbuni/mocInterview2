@@ -25,16 +25,13 @@
 }
 
 .container input{
-    display: none;
-    position: absolute;
-    margin-bottom: 0%;
-    
+    opacity: 0;
 }
 .section-howitworks{
     position: relative;
     width: 88%;
     margin: auto;
-    height:40rem;
+    height:25rem;
     margin-top: 0px;
     animation: trans 0.7s linear forwards;
 }
@@ -189,7 +186,7 @@ section p{
     transition: all 0.3 ease;
 }
 .register:checked  ~.head .line span{
-    width: 1%;
+    width: 0%;
 }
 .edit-profile:checked  ~.head .line span
 {

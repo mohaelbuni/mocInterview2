@@ -2,9 +2,10 @@ button{
     margin-bottom: 80px;
 }
 .client-msg{
-    color: #2A1A5E;
+    color: #fd9a34;
     font-weight: 700;
     font-size: 20px;
+    margin-top: 20px;
   
 }
 .client-btn{
@@ -15,7 +16,7 @@ button{
     padding: 10px 10px;
     text-decoration: none;
     cursor: pointer;
-    margin-left: -4rem;
-    margin-top: 80px;
+    margin-left: 0.7rem;
+    margin-top: 90px;
 }
 

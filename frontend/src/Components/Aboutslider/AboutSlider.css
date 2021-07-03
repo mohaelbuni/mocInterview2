@@ -1,6 +1,7 @@
 .first{
     height: 100%;
     width: 100%;
+   
 }
 .second{
     height: 100%;
@@ -17,7 +18,7 @@
     
 }
 .paragraph{
-    color: #2A1A5E;
-    size: 70px;
+    color: white;
+    font-size: 20px;
     font-weight: bold;
 }

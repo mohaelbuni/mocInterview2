@@ -83,7 +83,7 @@ function Questions() {
       <Navbar screenName={'Log in'} nextNav={'/signupin'} arr={ SideBarData }/>
       <div className='all'>
         <div className='START-LINE'>
-          <h3>Frequently Asked Questions</h3>
+          <h3 >Frequently Asked Questions</h3>
         </div>
         <div className='faqs'>
            {faqs.map((faq, i) => (

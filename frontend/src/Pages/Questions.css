@@ -3,22 +3,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
+  
 }
 body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+	background-color: #EEE;
 }
 .all{
 	background-color: #EEE;
+	margin-top: 20px;
 }
+
 .START-LINE{
     display: flex;
     justify-content: center;
     align-content: center;
     padding: 15px;
-    background-color: #fcdc54;
-    color: white;
+    background-color:#EEE;
+    color: #2A1A5E;
+	font-weight: bold;
+	margin-left: -15px;
+	
 }
 .h3{
     font-size: 28px;
