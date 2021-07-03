@@ -30,5 +30,7 @@ class Answer(models.Model):
 
 class Feedback(models.Model):
     feedback_id = models.IntegerField()
-    interview = models.ForeignKey(Interview, on_delete=models.CASCADE)
     feedback_text = models.TextField(max_length=1000, blank=True)
+
+    def __str__(self):
+        return self.feedback_text

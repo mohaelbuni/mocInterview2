@@ -11,7 +11,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import speech_recognition as sr
-from .models import Question,Answer
+from .models import Question,Answer, Feedback
 from .serializers import QuestionSerializer
 from rest_framework.response import Response
 from django.http import HttpResponse
@@ -51,12 +51,13 @@ def saveNotes(request,id):
     
 
 
-    
 
 
 
 # def Similarity(request, filename, comparefile):
 def Similarity(request,note,compareText):
+
+
         
         # compareText = Question.objects.get(pk=id)
         # get comparefile from database
@@ -64,19 +65,17 @@ def Similarity(request,note,compareText):
         
         # recive recorded text from frontend and convert it to file and name it filename
         
-        file_docs = []
-        with open (comparefile) as f:
-            tokens = sent_tokenize(f.read())
-            for line in tokens:
-                file_docs.append(line)
-        file_docs
-        
-        text = []
-        with open (filename) as f:
-            tokens = sent_tokenize(f.read())
-            for line in tokens:
-                text.append(line)
-        text
+        notelist = []
+        notetoken = sent_tokenize(note)
+        for line in notetoken:
+            notelist.append(line)
+
+
+        comparelist = []
+        comparetoken = sent_tokenize(compareText)
+        for line in comparetoken:
+            comparelist.append(line)
+
 
         # this function returns a list of tokenized and stemmed words of any text
         
@@ -111,22 +110,21 @@ def Similarity(request,note,compareText):
             input_str = text.lower()
             return input_str
 
-        
         #print(stopwords.words('english'))
         stop_words = set(stopwords.words('english'))
         cleaned_corpus = []
         #text = str(text)
-        for doc in [str(text)]:
+        for doc in [str(notelist)]:
 
             tokens = get_tokenized_list(doc)
             doc_text = remove_stopwords(tokens)
-            doc_text  = word_stemmer(doc_text)
+            doc_text = word_stemmer(doc_text)
             doc_text = ' '.join(doc_text)
             cleaned_corpus.append(doc_text)
         cleaned_corpus
 
         cleaned_corpus2 = []
-        for doc in file_docs :
+        for doc in comparelist :
 
             tokens = get_tokenized_list(doc)
             #print(tokens)
@@ -138,6 +136,8 @@ def Similarity(request,note,compareText):
             #print(doc_text)
             cleaned_corpus2.append(doc_text)
         cleaned_corpus2
+
+
         def clean_text(document):
             '''it must take a list and it will return it cleaned'''
             cleaned_corpus = []
@@ -149,15 +149,15 @@ def Similarity(request,note,compareText):
                 cleaned_corpus.append(doc_text)
                 print("document after cleaning: "+doc_text)
 
-        clean_text(file_docs)
+        clean_text(comparelist)
         
-        clean_text(text)
+        clean_text(notelist)
 
         tfidf_vectorizer = TfidfVectorizer()
         vectorizer = CountVectorizer()
         #y = vectorizer.fit_transform(file_docs)
-        tfidf_matrix_train = tfidf_vectorizer.fit_transform(file_docs)
-        tfidf_matrix_test = tfidf_vectorizer.transform(text)
+        tfidf_matrix_train = tfidf_vectorizer.fit_transform(comparelist)
+        tfidf_matrix_test = tfidf_vectorizer.transform(notelist)
         cosine_similarity(tfidf_matrix_train,tfidf_matrix_test)
 
         tfidf_vectorizer = TfidfVectorizer()
@@ -167,7 +167,54 @@ def Similarity(request,note,compareText):
         tfidf_matrix_test2 = tfidf_vectorizer.transform(cleaned_corpus)
         cosine_similarity(tfidf_matrix_train2,tfidf_matrix_test2,dense_output=True)
         sim=cosine_similarity(tfidf_matrix_train2,tfidf_matrix_test2,dense_output=True)*100
-        return sim[0]
+        finalsimilarity = sim[0]
+        print(finalsimilarity)
+        if finalsimilarity < 50:
+            feedback = Feedback.objects.get(feedback_id = 1)
+            print(feedback)
+
+        if finalsimilarity > 50 and finalsimilarity <= 70:
+            feedback = Feedback.objects.get(feedback_id = 2)
+            print(feedback)
+    
+        if finalsimilarity > 70 and finalsimilarity <= 90:
+            feedback = Feedback.objects.get(feedback_id = 3)
+            print(feedback)
+
+        if finalsimilarity > 90:
+            feedback = Feedback.objects.get(feedback_id = 4)
+        print(feedback)
+
+        return Response()
+        
+
+
+# @api_view(
+#     ["GET"],
+# )
+# def FeedbackFunction(request,sim):
+
+#     feedback = Feedback.objects.get(feedback_id = 1)
+#     print(feedback)
+
+    # if sim < 50:
+    #     feedback = Feedback.Objects.get(feedback_id = 1)
+    #     print(feedback)
+
+    # if sim > 50 & sim <= 70:
+    #     feedback = Feedback.Objects.get(feedback_id = 2)
+    #     print(feedback)
+    
+    # if sim > 70 & sim <= 90:
+    #     feedback = Feedback.Objects.get(feedback_id = 3)
+    #     print(feedback)
+
+    # if sim > 90:
+    #     feedback = Feedback.Objects.get(feedback_id = 4)
+    #     print(feedback)
+
+    # return Response()
+    
 
         
 
