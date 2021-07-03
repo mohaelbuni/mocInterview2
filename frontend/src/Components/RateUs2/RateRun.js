@@ -3,6 +3,8 @@ import "./Rate.css";
 import Button from "./button/Button";
 import Modal from "./modal/Modal";
 import { FaStar } from "react-icons/fa";
+import Navbar from './../Navbar/Navbar';
+import { SidebarLogged } from './../SidebarLogged';
 
 const colors ={
     orange : "#FB9224",
@@ -26,22 +28,24 @@ function RateRun() {
   }
 
   return (
+    <>
+    <Navbar screenName={'Log out'} nextNav={'/'} arr={ SidebarLogged }/>
     <React.Fragment>
       <div className="rateCon"
         style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "100vh"
+          height: "95vh"
+        
         }}
       >
-        <Button onClick={() => setShow(true)}>Rate Us</Button>
+        <Button className='btn-rate-us-inv' onClick={() => setShow(true)}>Rate Us</Button>
       </div>
       <Modal show={show} onClose={() => setShow(false)}>
       <div style={styles.container}>  
-        <div style={styles.stars}>
-          <br></br>
-          <br></br>
+        <div className='STARS' style={styles.stars}>
+          
             {stars.map((_, index) => {
                 return (
                     <FaStar
@@ -71,6 +75,7 @@ function RateRun() {
         </div>
       </Modal>
     </React.Fragment>
+    </>
   );
 
   
