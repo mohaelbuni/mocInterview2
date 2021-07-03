@@ -1,3 +1,6 @@
+*{
+    font-family: 'Berlin Sans FB'; 
+}
 video{
     object-fit :cover ;
     width:100%;
@@ -169,8 +172,9 @@ video{
      margin-left:  64rem;
  }
  .subscribe-but-home:hover {
-     background-color:#fcdc54  ;
-     border-radius: 50px ;
+    border-radius: 50px ;
+    background-color: #ffb048; 
+    color: white;
  }
  
  .topic{

@@ -65,7 +65,7 @@ function RateRun() {
                  placeholder="what's your feedback?"
                  style={styles.textarea}
                  />
-                 <button className='submit-but-rate' variant="primary" type="submit">
+                 <button className='rateus-btn' variant="primary" type="submit">
                         Submit
                     </button>
         </div>

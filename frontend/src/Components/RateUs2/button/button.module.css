@@ -1,8 +1,8 @@
 .btn {
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Berlin Sans FB'; 
+    font-size: 25px;
     position: relative;
     font-weight: 400;
-    font-size: 1.3rem;
     line-height: 2;
     height: 50px;
     transition: all 200ms linear;
@@ -26,8 +26,8 @@
   }
   
   .btn:hover {
-    background-color: var(--secondaryColor);
-    color: var(--primaryColor);
-    fill: var(--primaryColor);
+    border-radius: 50px ;
+    background-color: #ffb048; 
+    color: white;
   }
   

@@ -20,7 +20,7 @@ import { FooterContainer } from './../Containers/footer';
               <div className='text-white'>
               <h1 className='mb-3'> Welcome Boss! </h1>
           <h3 className='mb-4'>   Good impression count. Awkwardness can occur. Outcomes are unpredictable. </h3> 
-          <MDBBtn pill color= ' rgba(251, 146, 36, 0.8) '  type="submit" className='btn-l' >
+          <MDBBtn pill color='rgba(251, 146, 36, 0.8)'  type="submit" className='btn-l' >
           <MDBSpinner grow size='sm'>  <span className='visually-hidden'>Loading...</span> </MDBSpinner>
           <Link to='/InterviewNow' > Start Your Interview </Link>  </MDBBtn> 
         

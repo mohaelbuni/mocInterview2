@@ -79,11 +79,9 @@ export default Navbar;
                              </ul>
    ********************************************************
       const [toSign ,setToSign] = useState(true);
-
         if (!toSign) {
             return <Redirect  to={signUpIn}/>
         }
-
    
    
    <Link to='/signupin'>

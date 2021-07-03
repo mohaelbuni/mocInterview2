@@ -1,6 +1,5 @@
 .book-but{
     display: block;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: large;
     width: 150px;
     background-color: #2A1A5E;
@@ -12,10 +11,12 @@
     cursor: pointer;
     margin-top: 20px;
     margin-left:  2rem;
+    font-family: 'Berlin Sans FB'; 
+    font-size:  22px; 
 }
 .book-but:hover {
-    background-color:#FB9224 ;
-    color: #2A1A5E;
+    background-color: #372571; 
+    color: white;
     border-radius: 50px ;
 }
 

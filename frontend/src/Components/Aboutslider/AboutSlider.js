@@ -64,7 +64,6 @@ const AboutSslider = () => {
                             src="about8.png"
                             alt="Second slide"
                             />
-
                             <Carousel.Caption>
                             <h4 className='headlines'>Our Mission</h4>
                             <p className='paragraph'> Provide our clients the confidence and tips needed to break
@@ -78,7 +77,6 @@ const AboutSslider = () => {
                             src="about3.png"
                             alt="Third slide"
                             />
-
                             <Carousel.Caption>
                             <h4 className='headlines'>Your Role</h4>
                             <p className='paragraph'> Your role is as big as us, you need disipline,

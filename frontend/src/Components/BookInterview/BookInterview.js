@@ -94,7 +94,7 @@ function BookInterview() {
         <Typewriter
           onInit={(typewriter) => {
             typewriter
-              .typeString("Hello Nancy!")
+              .typeString("Hello !")
               .callFunction(() => {
                 alert("Don't miss your appointment")
               })

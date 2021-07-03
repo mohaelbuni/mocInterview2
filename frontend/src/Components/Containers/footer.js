@@ -46,7 +46,7 @@ export function FooterContainer() {
             aria-invalid="true"
             onChange={(e) => setEmail(e.target.value)}
           />
-          <button type="submit" className="subscribe-but" variant="primary">
+          <button type="submit" className="subscribe-but-footer" variant="primary">
             Submit
           </button>
         </form>
