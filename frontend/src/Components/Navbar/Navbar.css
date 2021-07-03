@@ -1,3 +1,6 @@
+*{
+    font-family: 'Berlin Sans FB'; 
+}
 .navbar {
     background-color: white;
     height: 100px;
@@ -38,6 +41,7 @@
     margin-top: 20px;
     margin-right: 60px;
     border-radius: 50px ;
+    font-family: 'Berlin Sans FB'; 
 }
 .nav-links {
     color: white;
@@ -50,8 +54,9 @@
     color: white;
 }
 .navbar-but:hover {
-    background-color:#2A1A5E  ;
     border-radius: 50px ;
+    background-color: #ffb048; 
+    color: white;
 }
 
 .nav-menu {

@@ -63,7 +63,6 @@ import Search from './Components/Search';
 import jobSearch from './Components/jobSearch/jobSearch';
 import searchBar from './Components/searchBar';
 import Employees from './Pages/Employees/Employees';
-
           <AppContainer>
              <AccountBox />
            </AppContainer>

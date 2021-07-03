@@ -1,3 +1,4 @@
+
 .text-5{
     color:  white;
     font-size: 18px ;
@@ -37,6 +38,7 @@
 }
 
 .subscribe-but-footer{
+    font-family: 'Berlin Sans FB'; 
     display: block;
     width: auto;
     background-color: #2A1A5E;
@@ -51,8 +53,8 @@
     margin-left:  47rem;
 }
 .subscribe-but-footer:hover {
-    background-color:white  ;
-    color: #2A1A5E;
+    background-color: #372571; 
+    color: white;
     border-radius: 50px ;
 }
 

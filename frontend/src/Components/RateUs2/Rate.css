@@ -11,10 +11,11 @@ body{
 *::before,
 *::after {
   box-sizing: border-box;
+   
 }
 
 .rateCon {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Berlin Sans FB';
   font-weight: 400;
   font-size: 15px;
   color: #1f2029;
@@ -60,6 +61,38 @@ body{
   opacity: 99%;
   padding: 12px;
   border-radius: 50px;
+}
+.rateus-btn {
+  font-family: 'Berlin Sans FB';
+  position: relative;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2;
+  height: 40px;
+  transition: all 200ms linear;
+  border-radius: 4px;
+  width: 150px;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  border: none;
+  border-radius: 50px!important;
+  cursor: pointer;
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+  fill: var(--secondaryColor);
+  box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
+  outline: 0;
+  text-transform: capitalize;
+}
+
+.rateus-btn:hover {
+  border-radius: 50px ;
+    background-color: #ffb048; 
+    color: white;
 }
 /*
 .content {
