@@ -5,6 +5,7 @@ import Modal from "./modal/Modal";
 import { FaStar } from "react-icons/fa";
 import Navbar from './../Navbar/Navbar';
 import { SidebarLogged } from './../SidebarLogged';
+import Footlog from './../Containers/f-log';
 
 const colors ={
     orange : "#FB9224",
@@ -74,6 +75,7 @@ function RateRun() {
                     </button>
         </div>
       </Modal>
+      <Footlog/>
     </React.Fragment>
     </>
   );

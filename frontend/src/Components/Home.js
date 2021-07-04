@@ -14,6 +14,7 @@ import Howdoesitworks from "./../Pages/Howdoesitworks";
 
 
 
+
 function Home() {
   const [email, setEmail] = useState("");
 
@@ -30,6 +31,7 @@ function Home() {
 
   return (
     <>
+     
       <Navbar screenName={"Log in"} nextNav={"/signupin"} arr={SideBarData} />
       <div className="section1-container">
         <div

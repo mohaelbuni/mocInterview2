@@ -28,7 +28,7 @@ body{
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
-  height: auto;
+  height: 85%;
   
 }
 .btn-rate-us-inv{
@@ -45,6 +45,11 @@ body{
   opacity: 99%;
   padding: 12px;
   border-radius: 50px;
+}
+.btn-rate-us-inv:hover{
+  border-radius: 50px ;
+  background-color: #ffb048; 
+  color: white;
 }
 .STARS{
   margin-top: 40px;
@@ -87,6 +92,7 @@ body{
   box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
   outline: 0;
   text-transform: capitalize;
+  color: white;
 }
 
 .rateus-btn:hover {

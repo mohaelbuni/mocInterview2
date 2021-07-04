@@ -5,7 +5,7 @@
     display: table;
     font-weight: bold;
     text-align: left;
-    margin-left: 380px;
+    margin-left: 400px;
 }
 .text-55 {
     color:  white;
@@ -14,10 +14,11 @@
     font-weight: bold;
     text-align: left;
     margin-top: -15px;
-    margin-left: 380px;
+    margin-left: 400px;
 }
 .subscribe-mail-form-footer{
     display: table;
+    
     
 }
 .input-email-footer{
@@ -28,8 +29,9 @@
     border: transparent;
  /*  border-bottom: 3px solid #2A1A5E ; */
     margin-top: 12px;
-    margin-left:  27rem;
+    margin-left:  29rem;
     border-radius: 50px ;
+    
 }
 .input-email-footer:hover{
     width: 300px;
@@ -50,7 +52,7 @@
     cursor: pointer;
     margin-top: -38px;
     margin-bottom: 50px;
-    margin-left:  47rem;
+    margin-left:  50rem;
 }
 .subscribe-but-footer:hover {
     background-color: #372571; 

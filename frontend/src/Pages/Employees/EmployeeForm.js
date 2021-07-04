@@ -3,6 +3,9 @@ import { Grid, } from '@material-ui/core';
 import Controls from "../../Components/controls/Controls";
 import { useForm, Form } from '../../Components/useForm';
 import * as employeeService from "../../services/employeeServices";
+import Navbar from './../../Components/Navbar/Navbar';
+import Footlog from './../../Components/Containers/f-log';
+import { SidebarLogged } from './../../Components/SidebarLogged';
 
 
 const statusItems = [
@@ -60,6 +63,8 @@ export default function EmployeeForm() {
     }
 
     return (
+        <>
+        <Navbar screenName={"Log out"} nextNav={"/"} arr={SidebarLogged} />
         <Form onSubmit={handleSubmit}>
 
             <Grid container>
@@ -129,5 +134,7 @@ export default function EmployeeForm() {
                 </Grid>
             </Grid>
         </Form>
+         <Footlog />
+         </>
     )
 }

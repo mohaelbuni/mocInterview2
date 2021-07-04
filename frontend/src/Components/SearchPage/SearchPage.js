@@ -7,6 +7,7 @@ import axios from "axios";
 import Loader from "../Loader/Loader";
 import Navbar from "./../Navbar/Navbar";
 import { SidebarLogged } from "./../SidebarLogged";
+import Footlog from './../Containers/f-log';
 
 
 
@@ -35,21 +36,15 @@ const SearchPage = () => {
    
 
       <Navbar screenName={"Log out"} nextNav={"/"} arr={SidebarLogged} />
-      <header>
+      
         <div
-          className="p-5 text-center bg-image"
-          style={{
-            backgroundImage:
-              "url('https://i.ibb.co/YyjP55T/198313736-2902650380010203-7073704255042241380-n.jpg')",
-            height: 650,
-          }}
-        >
-          <div className="text-white">
+          className="p-5 text-center bg-image">
+          
             <h2 className="text">
-              {" "}
+             
               Follow your passion. Its your dream job, Boss!{" "}
             </h2>
-          </div>
+        
           <form onSubmit={submitHandler}>
             <MDBCol md="4">
               <input
@@ -94,7 +89,7 @@ const SearchPage = () => {
             ""
           )}
         </div>
-      </header>
+     <Footlog/>
     </>
   );
 };

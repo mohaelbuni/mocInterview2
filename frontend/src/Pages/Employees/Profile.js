@@ -1,7 +1,9 @@
 import React, { useState } from "react"
-
 import Avatar from "react-avatar"
 import { Link } from "react-router-dom"
+import Navbar from './../../Components/Navbar/Navbar';
+import Footlog from './../../Components/Containers/f-log';
+import { SidebarLogged } from './../../Components/SidebarLogged';
 
 function Profile() {
   const [image, setImage] = useState("")
@@ -28,6 +30,9 @@ function Profile() {
 
   return (
     <>
+    <div>
+       <Navbar screenName={"Log out"} nextNav={"/"} arr={SidebarLogged} />
+       </div>
       <div className='container emp-profile'>
         {loading ? (
           <h3>Loading...</h3>
@@ -206,6 +211,9 @@ function Profile() {
           Edit Profile
         </Link>
       </button>
+      <Footlog />
+
+
     </>
   )
 }
