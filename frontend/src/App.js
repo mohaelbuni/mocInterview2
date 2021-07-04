@@ -10,6 +10,7 @@ import {
 
 /* PAGES */
 import Profile from "./Pages/Employees/Profile"
+import EmployeeFinal from './Pages/Employees/EmployeeFinal';
 import Home from "./Components/Home"
 import BookInterview from "./Components/BookInterview/BookInterview"
 import HowDoesItWork from "./Pages/Howdoesitworks"
@@ -39,6 +40,7 @@ function App() {
           <Route path='/book' component={BookInterview} />
           <Route path='/profile' component={Profile} />
           <Route path='/rate' component={RateRun} />
+          <Route path='/editprofile' component={EmployeeFinal} />
           {/* ------------------------------------------ */}
 
           <Route path='/signupin' component={signUpIn} />
