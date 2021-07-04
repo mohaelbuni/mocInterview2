@@ -32,9 +32,9 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/how' component={HowDoesItWork} />
           <Route path='/faqs' component={Questions} />
-          
           <Route path='/afterLogin' component={afterLogin} />
           <Route path='/search' component={SearchPage} />
+          <Route path='/404' component={NotFound} />
           {/* -------------------------------------- */}
           <Route path='/InterviewNow' component={InterviewPage} />
           <Route path='/book' component={BookInterview} />

@@ -96,3 +96,5 @@ export function FooterContainer() {
   );
 }
 export default FooterContainer;
+// 
+// box-shadow: inset 0 0 99999px rgba(0, 120, 255, 0.5);

@@ -43,7 +43,7 @@ ul.Nav{
     position: absolute;
     width: 100%;
     margin-top: -200px;
-    margin-left: 35px;
+    margin-left: 78px;
 }
 ul.Nav li{
     list-style: none;
@@ -143,6 +143,8 @@ section{
     border-radius: 5px;
     padding:30px;
     color: white;
+    margin-left: 3rem;
+    margin-top: -30px;
 }
 section span{
     font-size: 3rem;

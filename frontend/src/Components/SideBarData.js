@@ -32,7 +32,7 @@ export const SideBarData =[
     }, 
     {
         title : 'How does it work?',
-        path : '/how',
+        path : '#howdoesitwork',
         icon : <i className="far fa-question-circle"></i>,
         cName : 'nav-text' 
 
