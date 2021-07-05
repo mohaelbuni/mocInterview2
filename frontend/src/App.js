@@ -35,11 +35,11 @@ function App() {
           <Route path='/afterLogin' component={afterLogin} />
           <Route path='/search' component={SearchPage} />
           <Route path='/404' component={NotFound} />
-          {/* -------------------------------------- */}
           <Route path='/InterviewNow' component={InterviewPage} />
           <Route path='/book' component={BookInterview} />
-          <Route path='/profile' component={Profile} />
           <Route path='/rate' component={RateRun} />
+          {/* -------------------------------------- */}
+          <Route path='/profile' component={Profile} /> 
           <Route path='/editprofile' component={EmployeeFinal} />
           {/* ------------------------------------------ */}
 
