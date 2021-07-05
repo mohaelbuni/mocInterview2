@@ -121,7 +121,7 @@ video{
      font-weight: bold;
      width:100%;
      text-align: right;
-     margin-left: -80px;
+     margin-left: -65px;
      margin-top: -10px;
  }
  .text-4444{
@@ -131,7 +131,7 @@ video{
      font-weight: bold;
      width:100%;
      text-align: right;
-     margin-left: -380px;
+     margin-left: -375px;
      margin-top: -10px;
  }
  
@@ -182,7 +182,14 @@ video{
     text-align: center;
     margin-right: 22px;
     font-weight: bold;
-    margin-top: 7rem;
+    margin-top: 10rem;
+ }
+ .topic2{
+    color: #fd9a34;
+    text-align: center;
+    margin-right: 22px;
+    font-weight: bold;
+    margin-bottom: 50px;
  }
  .header{
      color: #fcdc54;

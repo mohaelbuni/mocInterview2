@@ -19,7 +19,7 @@ import {Link } from 'react-router-dom';
                  <Link to='#' className='menu-icon' >
                     <i className="fas fa-bars" onClick={showSidebar} ></i>
                  </Link> 
-                 <Link  to ='/about' >
+                 <Link  to ='/faqs' >
                  <img className='navbar-logo' src='../logo.png' alt ='../logo192.png'/>
                  </Link>
                  <button className='navbar-but'>   

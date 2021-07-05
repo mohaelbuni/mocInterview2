@@ -14,6 +14,7 @@ function Howdoesitworks() {
          <>
        
         <div className='section-howitworks' id='howdoesitwork'>
+            
             <div className="container">
                     <input type='radio' className='register'  id=''  name='flash' checked={registerVisible}  />
                     <input type='radio'  className='edit-profile'   id=''  name='flash' checked={editProfileVisible}  />

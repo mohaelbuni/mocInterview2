@@ -21,11 +21,12 @@
            <br/>
            <br/>
            <br/>
+           <br/>
+           <br/>
             <AppContainer>
                <AccountBox />
             </AppContainer>
-           <br/>
-                 <FooterContainer />
+            <FooterContainer />
           </>
      )
  }

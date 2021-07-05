@@ -18,28 +18,24 @@
     background: none;
     margin-left: 3rem;
     font-size: 2.4rem;
-    align-items: center;
-    margin-top: 30px;
+    margin-bottom: 65px;
 }
 .navbar-logo {
     height: 70px;
     width: auto;
-    align-items: center;
-    margin-left: 31rem;
-    margin-top: 0px;
-    margin-bottom: 15px;
+    margin-left: 1rem;
+    margin-bottom: 65px;
 }
 .navbar-but {
-    display: flex;
+    
     background-color:#fd9a34 ;
     color: white;
     border: transparent;
-    grid-gap: 15px;
     font-size: 1.5rem;
     opacity: 99%;
-    float: right;
-    margin-top: 20px;
-    margin-right: 60px;
+    padding: 10px;
+    margin-top: 12.5px;
+    margin-right: 45px;
     border-radius: 50px ;
     font-family: 'Berlin Sans FB'; 
 }
@@ -63,7 +59,7 @@
     background-color: #FB9224;
     color: white;
     width: 290px;
-    height: 68vh;
+    height: 27rem;
     display: flex;
     justify-content: flex-start;
     position: fixed;

@@ -7,7 +7,7 @@
 
 .cotainer{
     width: 80vw;
-    margin-bottom: 0;
+   
 }
 .progresbar-tittle{
     
@@ -118,7 +118,7 @@ ul.Nav li.active::after{
     content: '';
     width: 0.1%;
     height: 90%;
-    left: -20px;
+    left: 22px;
     position: absolute;
     background-image: linear-gradient(to right, darkblue 0%, #2A1A5E 100%  );
     z-index: 2;

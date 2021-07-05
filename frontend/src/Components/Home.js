@@ -91,7 +91,7 @@ function Home() {
       </div>
 
       <div className="section3-aboutus" id="aboutUs">
-        <h1 className="topic">About Us</h1>
+        <h1 className="topic2">About Us</h1>
         <Fade top>
           <h2 className="header"> Our Mission</h2>
         </Fade>
